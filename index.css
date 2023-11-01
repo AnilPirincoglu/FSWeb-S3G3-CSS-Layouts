@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80rem; 
+    margin: 0 auto;
+}
+
+.section-background {
+    background-color: rgb(173, 173, 173);
+    height: 8rem;
+    border: 1px solid currentColor;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header > div > h2 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+header > div > nav {
+    width: 40rem ;
+    margin-left: 1rem;   
+}
+
+.btn {
+    width: 8rem;
+    border-radius: 1rem;
+    background-color: rgb(109, 106, 106);
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.chapter {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  
+}
+
+.flex-informations {
+    display: flex;
+    flex-direction: column;
+}
+
+div.flex-informations {
+     justify-content: flex-end; 
+     font-size: 1.1rem; 
+}
+
+div.flex-informations > p {
+    width: 30rem;
+}
+
+section > div > div {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
