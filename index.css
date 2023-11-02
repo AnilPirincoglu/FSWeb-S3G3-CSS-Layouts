@@ -1,16 +1,17 @@
 *{
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 .container {
-    width: 80rem; 
-    margin: 0 auto;
+    max-width: 192rem;
+    margin: auto; 
 }
 
 .section-background {
     background-color: rgb(173, 173, 173);
-    height: 8rem;
-    border: 1px solid currentColor;
+    height: 12rem;
+    border: 0.06rem solid transparent;
 }
 
 .flex-container {
@@ -20,23 +21,24 @@
 }
 
 header > div > h2 {
-    margin-left: 1rem;
-    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    font-size: 2.5rem;
 }
 
 header > div > nav {
-    width: 40rem ;
-    margin-left: 1rem;   
+    max-width: 35rem ;
+    margin-left: 1.5rem;   
 }
 
 .btn {
-    width: 8rem;
+    max-width: 15rem;
     border-radius: 1rem;
     background-color: rgb(109, 106, 106);
-    padding: 0.5rem;
+    padding: 0.7rem;
     text-align: center;
     text-decoration: none;
     color: black;
+    font-size: 1.6rem;
 }
 
 .btn:hover {
@@ -52,24 +54,31 @@ header > div > nav {
   
 }
 
-.flex-informations {
+#informations {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end; 
+    font-size: 3rem; 
+    max-width: 50%;
 }
 
-div.flex-informations {
-     justify-content: flex-end; 
-     font-size: 1.1rem; 
+img {
+    max-width: 100%;
+    border: 0.5rem solid transparent;
 }
 
-div.flex-informations > p {
-    width: 30rem;
-}
 
 section > div > div {
     text-align: center;
+    font-size: 2rem;
 }
+
+
 
 footer {
     text-align: center;
+}
+
+footer > div > p {
+    font-size: 1.6rem;
 }
