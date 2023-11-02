@@ -81,29 +81,52 @@ footer > div > p {
     font-size: 1.6rem;
 }
 
-
-@media (width > 1920px) {
+@media screen and (max-width:500px) {
+   
     .container{
-        max-width: 192rem;
+        max-width: 30rem;
     }
 
-}
+    header > div > nav {
+        max-width: 30rem ;
+    }
 
-@media (1920px >= width > 1366px)  {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .section-background {
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        border: 0;
+        text-align: center;
+    }
+
+    #informations {
+        display: block;
+        text-align: center;
+    }
+
+    .btn {
+        margin-bottom: 0.5rem;
+    }
+
+    /* #first > div{
+        flex-wrap:wrap ;
+        flex-direction: column;
+    }
+
+    #first > div > div  {
+        max-width: 50%;
+    }
+     */
     
-    .container{
-        max-width: 136.6rem;
-    }
 }
 
-@media (1366px >= width > 800px)  {
-    
-    .container{
-        max-width: 80rem;
-    }
-}
-
-@media (800px >= width > 500px) {
+@media screen and (min-width: 500px) {
 
     .container{
         max-width: 50rem;
@@ -138,47 +161,24 @@ footer > div > p {
     }
 }
 
-@media (500px >= width) {
-   
+@media screen and (min-width: 800px)  {
+    
     .container{
-        max-width: 30rem;
+        max-width: 80rem;
     }
-
-    header > div > nav {
-        max-width: 30rem ;
-    }
-
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-
-    .section-background {
-        background-color: rgb(255, 255, 255);
-        height: 100%;
-        border: 0;
-        text-align: center;
-    }
-
-    #informations {
-        display: block;
-        text-align: center;
-    }
-
-    .btn {
-        margin-bottom: 0.5rem;
-    }
-
-    #first > div{
-        flex-wrap:wrap ;
-        flex-direction: row;
-    }
-
-    #first > div > div  {
-        max-width: 50%;
-    }
-    
-    
 }
+
+@media screen and (min-width: 1366px)  {
+    
+    .container{
+        max-width: 136.6rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container{
+        max-width: 192rem;
+    }
+
+}
+
