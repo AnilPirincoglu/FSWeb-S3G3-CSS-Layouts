@@ -73,12 +73,12 @@ section > div > div {
     font-size: 2rem;
 }
 
-footer {
-    text-align: center;
-}
-
 footer > div > p {
     font-size: 1.6rem;
+}
+
+footer {
+    text-align: center;
 }
 
 @media screen and (max-width:500px) {
@@ -99,9 +99,9 @@ footer > div > p {
     }
 
     .section-background {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(187, 187, 187);
         height: 100%;
-        border: 0;
+        border: 0.1rem transparent;
         text-align: center;
     }
 
@@ -114,19 +114,12 @@ footer > div > p {
         margin-bottom: 0.5rem;
     }
 
-    /* #first > div{
-        flex-wrap:wrap ;
-        flex-direction: column;
+    footer > div.section-background {
+        padding-bottom: 1rem;
     }
-
-    #first > div > div  {
-        max-width: 50%;
-    }
-     */
-    
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) and (max-width: 800px) {
 
     .container{
         max-width: 50rem;
@@ -161,14 +154,14 @@ footer > div > p {
     }
 }
 
-@media screen and (min-width: 800px)  {
+@media screen and (min-width: 800px) and (max-width: 1366px) {
     
     .container{
         max-width: 80rem;
     }
 }
 
-@media screen and (min-width: 1366px)  {
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
     
     .container{
         max-width: 136.6rem;
